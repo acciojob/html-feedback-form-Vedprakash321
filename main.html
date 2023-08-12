@@ -7,54 +7,26 @@
 </head>
 
 <body>
+	<h1>Feedback Form</h1>
+	<form method="POST">
+		<div>
+		<label for="name">Name</label>
+		<input id="name" type="text" minlength="3" maxlength="50"/>
+		</div>
+		<div>
+		    <label for="portfolio">portfolio</label>
+			<input type="url" id="portfolio"/>
+		</div>
+		<div>
+		    <label for="favColor">fav Color</label>
+			<input type="color" id="favColor"/>
+		</div>
+		<div>
+		    <label for="likeness">Likeness</label>
+			<input type="range" id="likeness" min="1" max="100"/>
+		</div>
+	</form>
 	<!-- the entire body must be written by student -->
-	<h2>Feedback Form</h2>
-	<table  border="1">
-<!-- 		<h2>Input Elements</h2> -->
-		<tr  >
-			<th>Element</th>
-			<th>ID</th>
-			<th>Type</th>
-			<th>Attributes</th>
-			<th>Label Required</th>
-			
-		</tr>
-		<tr id="bg-check" style="background-color: rgb(235, 242, 249); color: black">
-			<td>Name</td>
-			<td>name</td>
-			<td>Text</td>
-			<td>minlength="3",maxlength="50",required</td>
-			<td>Yes</td>
-			
-		</tr>
-		<tr >
-			<td>Portfolio</td>
-			<td>portfolio</td>
-			<td>URL</td>
-			<td>required</td>
-			<td>Yes</td>
-			
-		</tr>
-		<tr id="bg-check" style="background-color: rgb(235, 242, 249); color: black">
-			<td>Favourite Color</td>
-			<td>favColor</td>
-			<td>Color</td>
-			<td>N/A</td>
-			<td>Yes</td>
-			
-		</tr>
-		<tr>
-			<td>Likeness</td>
-			<td>likeness</td>
-			<td>Range</td>
-			<td>min="1",max="100"</td>
-			<td>Yes</td>
-			
-		</tr>
-		
-	</table>
-
-	
     <script type="text/javascript" src="./script.js">
 </script>
 
