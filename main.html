@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<h1>Feedback Form</h1>
+<!-- 	<h1>Feedback Form</h1>
 	<form method="POST">
 		<div>
 		<label for="name">Name</label>
@@ -25,8 +25,28 @@
 		    <label for="likeness">Likeness</label>
 			<input type="range" id="likeness" min="1" max="100"/>
 		</div>
-	</form>
+	</form> -->
 	<!-- the entire body must be written by student -->
+<h1>Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <label for="name">Name<span>*</span></label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+
+        <label for="portfolio">Portfolio<span>*</span></label>
+        <input type="url" id="portfolio" name="portfolio" required>
+
+        <label for="favColor">Favorite Color<span>*</span></label>
+        <input type="color" id="favColor" name="favColor" required>
+
+        <label for="likeness">Likeness<span>*</span></label>
+        <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
